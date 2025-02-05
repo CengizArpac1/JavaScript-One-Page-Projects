@@ -1,0 +1,85 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #dde3a8, #fad0c4);
+    color: #333;
+}
+
+header.hero {
+    text-align: center;
+    padding: 3em;
+    background: #a2cc5e;
+    color: rgb(9, 2, 2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about, .contact {
+    padding: 2em;
+    background: #ffe0f7;
+    border: 2px solid #daedbf;
+    border-radius: 10px;
+    margin: 2em;
+    text-align: center;
+}
+
+.gallery {
+    padding: 2em;
+    background: #fff5f7;
+    text-align: center;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #ff758c;
+    color: white;
+}
